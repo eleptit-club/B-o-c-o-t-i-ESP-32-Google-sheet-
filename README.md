@@ -63,8 +63,8 @@
 			#include <MFRC522.h>
 
 			// WiFi credentials
-			const char* ssid = "Huy Hoang";
-			const char* password = "hoimehuong12";
+			const char* ssid = "..";
+			const char* password = "...";
 
 			// Google Apps Script URL
 			String GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz6aaPwKjSjlV69xXbRZmtlX1XyETJSx8tYT0JLmbKfLnUvYqyCn0cypfQ892-Fm1sl/exec"; (kết nối cập nhật dữ k=liệu esp lên link scripts)
