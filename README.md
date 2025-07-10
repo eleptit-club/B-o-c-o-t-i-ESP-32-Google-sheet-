@@ -58,7 +58,7 @@
 			}
    ![image](https://github.com/user-attachments/assets/4620ca31-f5c7-4074-aefc-26a6cbb713bd)
 
-## 3. Nạp code kết nối với scipt (String GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz6aaPwKjSjlV69xXbRZmtlX1XyETJSx8tYT0JLmbKfLnUvYqyCn0cypfQ892-Fm1sl/exec")
+## 3. Nạp code kết nối với scipt 
 			#include <WiFi.h>
 			#include <HTTPClient.h>
 			#include <SPI.h>
