@@ -58,7 +58,7 @@
 			}
    ![image](https://github.com/user-attachments/assets/4620ca31-f5c7-4074-aefc-26a6cbb713bd)
 
-## 3. Nạp code kết nối với scipt
+## 3. Nạp code kết nối với scipt (String GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz6aaPwKjSjlV69xXbRZmtlX1XyETJSx8tYT0JLmbKfLnUvYqyCn0cypfQ892-Fm1sl/exec")
 			#include <WiFi.h>
 			#include <HTTPClient.h>
 			#include <SPI.h>
@@ -78,7 +78,7 @@
 			unsigned long lastReadTime = 0;
 			const unsigned long readDelay = 5000;
 
-			// Giả lập cơ sở dữ liệu: ánh xạ UID với thông tin sinh viên
+
 			String getStudentInfo(String uid) {
 			  if (uid == "C2A7B316") {
 				return "ten=Nguyen Van A&mssv=SV001&malop=CTK42&ngaysinh=2003-01-01";
@@ -95,8 +95,8 @@
 
 			  WiFi.begin(ssid, password);
 			  Serial.print("Đang kết nối WiFi");
-			  while (WiFi.status() != WL_CONNECTED) { // kết nối wifi với esp
-				delay(500);
+			  while (WiFi.status() != WL_CONNECTED) { ( kết nối wifi với esp )
+     				delay(500);
 				Serial.print(".");
 			  }
 			  Serial.println("\nWiFi connected!");
