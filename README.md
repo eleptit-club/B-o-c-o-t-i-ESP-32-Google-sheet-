@@ -56,6 +56,8 @@
 			function stripQuotes(value) {
 			  return value.replace(/^["']|['"]$/g, "");
 			}
+   ![image](https://github.com/user-attachments/assets/4620ca31-f5c7-4074-aefc-26a6cbb713bd)
+
 ## 3. Nạp code kết nối với scipt
 			#include <WiFi.h>
 			#include <HTTPClient.h>
@@ -93,7 +95,7 @@
 
 			  WiFi.begin(ssid, password);
 			  Serial.print("Đang kết nối WiFi");
-			  while (WiFi.status() != WL_CONNECTED) {
+			  while (WiFi.status() != WL_CONNECTED) { // kết nối wifi với esp
 				delay(500);
 				Serial.print(".");
 			  }
@@ -105,7 +107,7 @@
 			  if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial())
 				return;
 
-			  if (millis() - lastReadTime < readDelay) return;
+			  if (millis() - lastReadTime < readDelay) return;  
 			  lastReadTime = millis();
 
 			  // Lấy UID
